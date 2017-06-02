@@ -3,7 +3,9 @@
 echo
 echo "Hello there! and welcome to ..."
 echo
+
 figlet "LASAGNE"
+
 echo
 echo "The default CMD of this container executes the TextParser example located at:"
 echo "    > $TAF_ROOT/examples/TextParser"
@@ -15,7 +17,9 @@ echo "The text of the example paragraph is listed below..."
 echo
 echo "============================================================================="
 echo
+
 cat $TAF_ROOT/examples/TextParser/SOA_Abstract.txt
+
 echo
 echo
 echo "============================================================================="
@@ -23,6 +27,7 @@ echo
 echo "Press 'enter' to execute the TextParser example, then"
 echo
 echo "Press 'enter' again to quit the container when finished"
+
 read -n1 -r -p "" key
 
 cd $DAF_ROOT/bin
