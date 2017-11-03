@@ -2,7 +2,7 @@
 # Dockerfile for https://github.com/LASAGNE-Open-Systems/LASAGNE-Core
 #
 
-FROM ubuntu:17.04
+FROM ubuntu:16.04
 
 # Update package repositories and install build-essential
 
@@ -10,10 +10,10 @@ RUN apt-get update && apt-get install -y build-essential git figlet
 
 # clone LASAGNE-Core and dependencies
 
-RUN git clone --depth 1 git://github.com/DOCGroup/MPC.git /opt/MPC \
- && git clone -b Latest_Micro --depth 1 git://github.com/DOCGroup/ACE_TAO.git /opt/ACE_TAO \
- && git clone --depth 1 git://github.com/objectcomputing/OpenDDS.git /opt/OpenDDS \
- && git clone --depth 1 git://github.com/LASAGNE-Open-Systems/LASAGNE-Core.git /opt/LASAGNE-Core
+RUN git clone --depth 1 -b ACE+TAO-6_4_5 git://github.com/DOCGroup/MPC.git /opt/MPC \
+ && git clone --depth 1 -b ACE+TAO-6_4_5 git://github.com/DOCGroup/ACE_TAO.git /opt/ACE_TAO \
+ && git clone --depth 1 -b DDS-3.12.1 git://github.com/objectcomputing/OpenDDS.git /opt/OpenDDS \
+ && git clone --depth 1 -b v1.5.0 git://github.com/LASAGNE-Open-Systems/LASAGNE-Core.git /opt/DAF
 
 # Setup environment variables
 
@@ -21,7 +21,7 @@ ENV MPC_ROOT=/opt/MPC \
     ACE_ROOT=/opt/ACE_TAO/ACE \
     TAO_ROOT=/opt/ACE_TAO/TAO \
     DDS_ROOT=/opt/OpenDDS \
-    DAF_ROOT=/opt/LASAGNE-Core
+    DAF_ROOT=/opt/DAF
 
 ENV TAF_ROOT=$DAF_ROOT/TAF \
     LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ACE_ROOT/lib:$DDS_ROOT/lib:$DAF_ROOT/lib
