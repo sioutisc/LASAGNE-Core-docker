@@ -42,4 +42,4 @@ WORKDIR $DAF_ROOT/bin
 
 ADD TextParser.sh $DAF_ROOT/bin
 
-CMD $DAF_ROOT/bin/TextParser.sh
+CMD bash

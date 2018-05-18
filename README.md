@@ -20,22 +20,20 @@ See instructions here: https://docs.docker.com/engine/installation/
 > docker build -t lasagne-core .
 ```
 
-## Running your own container
+## Running your container
 
-Run the following command 
+Run the following command to enter the container and look around
 
 ```
 > docker run -it --rm lasagne-core
 ```
 
-# Inspecting the container
+# Running the TextParser example
 
-Instead of running the TextParser example, you can 'enter' the container and inspect the source code
-
-Run the following command
+Run the following command to execute the text parser example
 
 ```
-> docker run -it --rm --entrypoint=/bin/bash lasagne-core
+> $DAF_ROOT/bin/TextParser.sh
 ```
 
 # License
