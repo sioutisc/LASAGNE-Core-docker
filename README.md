@@ -6,7 +6,7 @@ Layered Approach to Service Architectures for a Global Network Environment (LASA
 
 see https://github.com/LASAGNE-Open-Systems/LASAGNE-Core
 
-# Installing docker
+## Installing docker
 
 See instructions here: https://docs.docker.com/engine/installation/
 

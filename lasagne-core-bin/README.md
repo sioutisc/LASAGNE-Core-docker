@@ -8,7 +8,7 @@ Clone and build the lasagne-core container on your system.
 
 See the __lasagne-core__ directory in this repository
 
-# Create your own container
+## Create your own container
 
 ```
 > docker build -t lasagne-core-bin .
