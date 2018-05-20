@@ -6,35 +6,17 @@ Layered Approach to Service Architectures for a Global Network Environment (LASA
 
 see https://github.com/LASAGNE-Open-Systems/LASAGNE-Core
 
-## Docker container
+## This repository
 
-This Dockerfile in this repository builds v1.4.3 of LASAGNE Core 
+This repository contains various Docker projects relevant to LASAGNE
 
-# Installing docker
+# lasagne-core
 
-See instructions here: https://docs.docker.com/engine/installation/
+Builds the full source code of LASAGNE, but only with OpenDDS
 
-# Build your own container
+# lasagne-core-bin
 
-```
-> docker build -t lasagne-core .
-```
-
-## Running your container
-
-Run the following command to enter the container and look around
-
-```
-> docker run -it --rm lasagne-core
-```
-
-# Running the TextParser example
-
-Run the following command to execute the text parser example
-
-```
-> $DAF_ROOT/bin/TextParser.sh
-```
+Builds a binary only container with libraries extracted from lasagne-core container
 
 # License
 
