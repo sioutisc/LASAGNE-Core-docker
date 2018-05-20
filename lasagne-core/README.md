@@ -1,18 +1,6 @@
-# LASAGNE-Core
+# Project: lasagne-core
 
-Layered Approach to Service Architectures for a Global Network Environment (LASAGNE)
-
-## About LASAGNE
-
-see https://github.com/LASAGNE-Open-Systems/LASAGNE-Core
-
-## Docker container
-
-This Dockerfile in this repository builds v1.4.3 of LASAGNE Core 
-
-# Installing docker
-
-See instructions here: https://docs.docker.com/engine/installation/
+The Dockerfile in this repository builds v1.5.0 of LASAGNE Core 
 
 # Build your own container
 
@@ -30,13 +18,9 @@ Run the following command to enter the container and look around
 
 # Running the TextParser example
 
-Run the following command to execute the text parser example
+Run the following command in the container to execute the text parser example
 
 ```
 > $DAF_ROOT/bin/TextParser.sh
 ```
 
-# License
-
-This Dockerfile and associated files are licensed under the terms of the GPL-3.0 license.
-See the LICENSE file for details.
