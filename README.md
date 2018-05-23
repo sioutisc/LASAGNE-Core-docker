@@ -16,6 +16,7 @@ This repository contains various Docker projects relevant to LASAGNE
 
 * __lasagne-core:__ Builds the full source code of LASAGNE, but only with OpenDDS
 * __lasagne-core-bin:__ Builds a binary only container
+* __lasagne-core-dev:__ Builds a container designed for compiling an external project
 
 ## License
 
