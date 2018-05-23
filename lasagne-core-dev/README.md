@@ -25,7 +25,8 @@ See the __lasagne-core__ directory in this repository
 
 ## Running your container
 
-__IMPORTANT__: For the below command to work correctly you need to have set an environment variable DEV_ROOT to point to the location of the external project. Alternatively, replace '$DEV_ROOT' in the command below with the full path of you project location 
+__IMPORTANT__: For the below command to work correctly you need to have set an environment variable DEV_ROOT to point to the location of the external project. Alternatively, replace '$DEV_ROOT' in the command below with the full path of your project location.
+
 Run the following command 
 
 ```
