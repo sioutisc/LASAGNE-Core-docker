@@ -1,7 +1,3 @@
 #!/bin/bash
-docker run \
-  -e DEV_USR=$USERNAME \
-  -e DEV_UID=$(id -u) \
-  -e DEV_GID=$(id -g) \
-  -v $DEV_ROOT:/opt/DEV \
-  --rm -it lasagne-core-dev
+echo 'NOTE: You should be running this command from within the directory of your LASAGNE project'
+docker run -v $(pwd):/opt/DEV --rm -it lasagne-core-dev

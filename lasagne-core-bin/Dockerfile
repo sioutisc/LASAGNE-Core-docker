@@ -39,7 +39,7 @@ COPY --from=libs /tmp/libs/opt /opt
 
 # Copy binary exe's into container
 
-COPY --from=lasagne-core \
+COPY --from=libs \
      $DAF_ROOT/bin/TAFServer \
      $DAF_ROOT/bin/MulticastDiscoveryUtility \
      $DAF_ROOT/bin/
