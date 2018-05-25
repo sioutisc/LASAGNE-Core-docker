@@ -28,3 +28,11 @@ Run the following command in the directory of your LASAGNE project
 ```
 > docker run -v $(pwd):/opt/DEV --rm -it lasagne-core-dev
 ```
+
+## Running specific applications
+
+The DEV_CMD argument can be used to instruct the container to execute a specific appication instead of a shell
+
+The __alias.bash__ script specifies a small number of bash functions using this method
+
+For example, the __Lmwc__ function is equivalent to running $ACE_ROOT/bin/mwc.pl inside the container
