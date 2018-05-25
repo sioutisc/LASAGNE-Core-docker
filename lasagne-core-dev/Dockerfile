@@ -1,5 +1,5 @@
 #
-# Dockerfile for binary only container of LASAGNE core
+# Dockerfile for development focused container of LASAGNE core
 #
 
 # Extend lasagne-core container
