@@ -12,6 +12,7 @@ FROM lasagne-core
 ARG DEV_UID
 ARG DEV_GID
 ARG DEV_USK
+ARG DEV_CMD
 
 # Sets the required paths for LASAGNE
 
@@ -29,4 +30,4 @@ WORKDIR $DEV_ROOT
 
 # Immediately switch to the DEV_USER upon running the container
 
-CMD su dev
+CMD su dev "$DEV_CMD"
