@@ -30,4 +30,4 @@ WORKDIR $DEV_ROOT
 
 # Immediately switch to the DEV_USER upon running the container
 
-CMD if [ -z "${DEV_CMD}" ]; then su dev; else su dev "$DEV_CMD"; fi
+CMD if [ -z "${DEV_CMD}" ]; then su dev; else su dev "-c $DEV_CMD"; fi
