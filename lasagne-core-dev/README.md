@@ -36,3 +36,9 @@ The DEV_CMD argument can be used to instruct the container to execute a specific
 The __alias.bash__ script specifies a small number of bash functions using this method
 
 For example, the __Lmwc__ function is equivalent to running $ACE_ROOT/bin/mwc.pl inside the container
+
+You can make use of these functions by sourcing __alias.bash__ into your environment
+
+```
+> source alias.bash
+```
