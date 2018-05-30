@@ -23,7 +23,7 @@ ENV DEV_ROOT=/opt/DEV \
 # Otherwise, build artefacts are owned by 'root'
 
 RUN groupadd -g $DEV_GID dev
-RUN useradd -u $DEV_UID -g $DEV_GID -d /home/dev dev
+RUN useradd -u $DEV_UID -g $DEV_GID -m -d /home/dev dev
 RUN echo umask $DEV_USK >> /etc/bash.bashrc
 
 WORKDIR $DEV_ROOT
